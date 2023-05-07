@@ -4,36 +4,20 @@
     #define optimize() ios_base::sync_with_stdio;cin.tie(0);cout.tie(0);
     #define endl '\n'
 
-    using namespace std;
-
     int main()
     {
         int t;
         cin >> t;
         cin.ignore();
-        
-        
-        while(t--){
-            string j;
-            getline(cin, j);
-            string s;
-            getline(cin, s);
-            int mined=0;
-            for(int i =0; i<s.size(); i++){
-                for(int m = 0; m< j.size(); m++ ){
-                    if(j[m]==s[i]){
-                        mined++;
-                        break;
-                    }
-                }
+        string j;
+        getline(cin, j);
+        int mined=0;
+        for(int i =0; i<j.size(); i++){
+            if(j[i]==j[i+1]){
+                mined++;
+                break;
             }
-            cout << mined << endl;
-            
-        }
-
-        
-
-            
+        cout << mined << endl;
+        }    
         return 0;
     }
-    
