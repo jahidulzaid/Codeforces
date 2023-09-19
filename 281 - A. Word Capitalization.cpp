@@ -4,8 +4,6 @@
     #define optimize() ios_base::sync_with_stdio;cin.tie(0);cout.tie(0);
     #define endl '\n'
 
-    using namespace std;
-
     int main()
     {
         string s;

@@ -4,35 +4,27 @@
     #define optimize() ios_base::sync_with_stdio;cin.tie(0);cout.tie(0);
     #define endl '\n'
 
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+
     int main()
     {
-        int t;
-        cin >> t;
-        cin.ignore();
-<<<<<<< HEAD
+        int t; cin>> t;
+        while (t--)
+        {
+            int n; cin>> n;
+            vector<char> s;
+            for (int i = 0; i< n; ++i){
+                int x; cin>> x;
+                s.push_back(x);
+            }
+            for(int i = 0; i<s.size(); ++i){
+                cout << s[i] << endl;
+            }
+        }
+        
 
-        while(t--){
-            string j;
-            getline(cin, j);
-            int mined=0;
-            for(int i =0; i<j.size(); i++){
-                if(j[i]==j[i+1]){
-                    mined++;
-                    break;
-                }
-            }
-            cout << mined << endl;
-=======
-        string j;
-        getline(cin, j);
-        int mined=0;
-        for(int i =0; i<j.size(); i++){
-            if(j[i]==j[i+1]){
-                mined++;
-                break;
-            }
-        cout << mined << endl;
->>>>>>> 79ed3b271756ac1de6c1e5bd873fb4a552f986e1
-        }    
+
         return 0;
     }
+    
