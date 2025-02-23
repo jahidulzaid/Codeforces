@@ -20,8 +20,21 @@ using namespace std;
 
 int main() {
     optimize();
-    
-
+    int a, b, ans;
+    vector<int> v;
+    cin >> a >> b;
+    v.push_back(a);v.push_back(b);
+    sort(v.begin(), v.end());
+    if(v[0]!=1){
+        ans = 1;
+    }
+    else if(v[1]!= 2){
+        ans = 2 ;
+    }
+    else if(v[2]!= 3){
+        ans = 3 ;
+    }
+    cout << ans << endl;
     
 
 

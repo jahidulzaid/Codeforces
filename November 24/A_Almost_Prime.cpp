@@ -20,10 +20,24 @@ using namespace std;
 
 int main() {
     optimize();
-    
+    int n; cin >> n;
+    int cnt= 0;
+    vector<int> primeDivs(n+1, 0);
 
-    
-
+    for(int i  = 2; i<=n; i++){
+        if(primeDivs[i] == 0){
+            for(int j = i;j<n; j+=i){
+                primeDivs[j]++;
+            }
+        }
+    }
+    int almostPrime = 0;
+    for(int i = 2; i<=n;i++){
+        if(primeDivs[i]==2){
+            almostPrime++;
+        }
+    }
+    cout << almostPrime << endl;
 
     return 0;
 }

@@ -1,4 +1,7 @@
+// Bismillahir Rahmanir Rahim
+// Jahidul Islam, Green University Of Bangladesh
 // @JahidulZaid
+
 #include <bits/stdc++.h>
 using namespace std;
 #include <cstdio>

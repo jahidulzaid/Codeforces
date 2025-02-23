@@ -20,10 +20,19 @@ using namespace std;
 
 int main() {
     optimize();
+    int t;
+    cin >> t; 
     
-
-    
-
+    while (t--) {
+        string W;
+        cin >> W;
+        W.pop_back();
+        W.pop_back();
+        cout << W + "i" << endl;
+    }
 
     return 0;
 }
+
+
+

@@ -18,29 +18,11 @@ using namespace std;
 int main() {
     optimize();
     // tt
-    int t;
-    cin >> t;
-    vector<char>v;
-
-    while(t--){
-        char x;cin>>x;
-        v.push_back(x);
-    }
-    int cntA = 0, cntD = 0;
-    for(auto x:v){
-        if(x == 'A'){
-            cntA++;
-        }else{
-            cntD++;
-        }
-    }
-    // debug(v);
-    // std::__debug(v);
-    cout << (cntA > cntD ? "Anton" : (cntA == cntD ? "Friendship" : "Danik")) << endl;
-
-    // debug(v);
-
-
+    
+    cout << "HEllo" << endl;
+    cout << "ENter t: " << endl;
+    int t; cin >>  t;
+    cout << t;
 
     return 0;
 }

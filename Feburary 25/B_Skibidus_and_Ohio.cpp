@@ -10,20 +10,24 @@ using namespace std;
 #define ll long long
 #define pb push_back
 
-#ifdef LOCAL
-#include "debug.h"
-#endif
-
-// #ifdef ONLINE_JUDGE
-// #include "debug.h"
-// #endif
+void solve(){
+    string str;
+    cin >> str;
+    int size = str.size();
+    for (ll i = 1; i < str.size(); i++) {
+        if (str[i-1] == str[i]) {
+            cout << "1" << endl;
+            return;
+        }
+    }
+    cout << size << endl;;
+}
 
 int main() {
-    optimize();
-    
-
-    
-
-
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
     return 0;
 }
